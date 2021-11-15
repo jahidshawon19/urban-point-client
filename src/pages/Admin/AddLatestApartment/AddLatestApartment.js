@@ -21,7 +21,7 @@ const AddLatestApartment = () => {
 
         const newLatestApartment = {place, room, cost, apartmentType, image, shortDescription}
 
-        fetch('http://localhost:5000/latestApartment', {
+        fetch('https://enigmatic-hollows-67176.herokuapp.com/latestApartment', {
             method:'POST',
             headers:{
                 'content-type': 'application/json'

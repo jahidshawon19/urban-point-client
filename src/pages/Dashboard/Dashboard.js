@@ -8,7 +8,7 @@ const Dashboard = () => {
     const [booking, setBooking] = useState([])
 
     useEffect(()=> {
-        const url = `http://localhost:5000/userBookingList?email=${user.email}`
+        const url = `https://enigmatic-hollows-67176.herokuapp.com/userBookingList?email=${user.email}`
         fetch(url)
         .then(res => res.json())
         .then(data => setBooking(data))

@@ -12,7 +12,7 @@ const BookingPage = () => {
 
 
     useEffect(()=>{
-        const url = `http://localhost:5000/latestApartment/${id}`
+        const url = `https://enigmatic-hollows-67176.herokuapp.com/latestApartment/${id}`
         fetch(url)
         .then(res => res.json())
         .then(data => setApartment(data))
