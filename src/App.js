@@ -17,6 +17,7 @@ import AdminHome from './pages/Admin/AdminHome/AdminHome';
 import BookingList from './pages/Admin/BookingList/BookingList';
 import Dashboard from './pages/Dashboard/Dashboard';
 import AddApartment from './pages/Admin/AddApartment/AddApartment';
+import NotFound from './pages/NotFound/NotFound';
 
 
 
@@ -73,6 +74,10 @@ function App() {
 
           <Route path="/register">
             <Register></Register>
+          </Route>
+
+          <Route path="*">
+            <NotFound></NotFound>
           </Route>
 
          
