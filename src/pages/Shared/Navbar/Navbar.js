@@ -3,22 +3,24 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLock, faUser} from '@fortawesome/free-solid-svg-icons'
 import useAuth from '../../../hooks/useAuth';
-
+import './Navbar.css'
 const Navbar = () => {
     const {user, logOut} = useAuth()
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                    <Link className="navbar-brand font-weight-bold" to="/">Urban Point</Link>
+          <header>
+              <div className="container">
+              <nav className="navbar navbar-expand-lg navbar-light">
+                    <Link className="navbar-brand font-weight-bold text-light" to="/">Urban Point</Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav ml-auto">
+                        <ul className="navbar-nav ml-lg-auto">
 
                         <li className="nav-item active">
-                            <Link className="nav-link" to="/">Home</Link>
+                            <Link className="nav-link active" to="/">Home</Link>
                         </li>
                         
 
@@ -64,6 +66,8 @@ const Navbar = () => {
                     
                     </div>
             </nav>
+              </div>
+          </header>
         </div>
     );
 };
