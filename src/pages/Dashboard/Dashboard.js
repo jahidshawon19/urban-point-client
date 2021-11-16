@@ -18,9 +18,9 @@ const Dashboard = () => {
         <>
             <Navbar></Navbar>
 
-           <section className="py-5">
+           <section className="py-5 mt-5">
                <div className="container">
-                   <h3 className="text-center font-weight-bold text-danger">My Total Booking: {booking.length} </h3>
+                   <h3 className="text-center font-weight-bold text-danger mt-5">My Total Booking: {booking.length} </h3>
                    <div className="row">
                        <div className="col-lg-4">
                          
